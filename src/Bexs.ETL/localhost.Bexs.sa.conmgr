@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.Bexs.sa"
+  DTS:DTSID="{68EEA0B3-89B4-46E4-8931-3D655D34928B}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=Bexs;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAG4g7TsQS3UOBS18JRwu/aQAAAAACAAAAAAAQZgAAAAEAACAAAADm5LdiH1ofNvGkKXbkaNtLa3VzHDe59par6h68Gq90nAAAAAAOgAAAAAIAACAAAABL173e7plBGd5gmb7e98AudkUERdLYHjJze49xjxaNPoAAAAAdvjqnQnW1G7949Is6SLRPYIcykFP7kXylvQmo/20GeP736F8n3cG5gWfY5+UECPXa6wkNY3UqY+vD7Z9MxkqRFWcpW/36KKOe2laUZKAJDqXAtIyO9q69EppAFZ/s7lBKFzPcACTSqy8iM6Og8YO2msze/3mbBZme3oj81O49LEAAAAC51LnH6V7xwrc8xm5rRczvv9Kb0jmOffgG1MF/Q+aJlJ9whNF7O4WAoVz8raQGn+I0d1Nky7TXDf7X0JeeZZAT</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
