@@ -11,7 +11,11 @@ namespace Bexs.Rest.Entities
 
         public int From { get; set; }
 
+        public string FromCode { get; set; }
+
         public int To { get; set; }
+
+        public string ToCode { get; set; }
 
         public decimal Price { get; set; }
     }

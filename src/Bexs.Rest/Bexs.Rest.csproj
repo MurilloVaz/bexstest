@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Noty.SqlServer" Version="1.0.0-alpha" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
   </ItemGroup>
 
 

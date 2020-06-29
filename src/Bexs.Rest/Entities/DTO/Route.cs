@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Bexs.Rest.Entities
+namespace Bexs.Rest.Entities.DTO
 {
-    public class RouteProcess : Route
+    public class Route : BaseRoute
     {
-        public List<Route> Routes { get; set; }
+        public int Order { get; set; }
     }
 }

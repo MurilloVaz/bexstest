@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace Bexs.Rest.Entities
 {
-    public class RotaProcesso : Route
+    public class RouteEntry
     {
-        public List<Route> PastRoutes { get; set; }
+        public int Id { get; set; }
 
-        public int OriginalFrom { get; set; }
+        public string Code { get; set; }
     }
 }

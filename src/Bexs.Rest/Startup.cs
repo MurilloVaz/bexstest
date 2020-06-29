@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Bexs.Rest.Extensions;
 using Bexs.Rest.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,6 +13,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Noty.SqlServer;
+using Microsoft.OpenApi.Models;
+
 namespace Bexs.Rest
 {
     public class Startup
@@ -25,13 +28,12 @@ namespace Bexs.Rest
 
         public void ConfigureServices(IServiceCollection services)
         {
-
-            var service = new RouteService();
-
-            var result = service.CheapeastRoute(2, 4);
-
+            services.AddMvc(config => config.EnableEndpointRouting = false);
+            services.AddSwaggerGen(c => c.SwaggerDoc("v1", new OpenApiInfo { Title = "Bexs Routes App", Version = "v1" }));
             services.AddControllers();
+            services.AddMemoryCache();
             services.AddSqlServerContext(Configuration.GetConnectionString("Default"));
+            services.AddDependencies();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -40,7 +42,6 @@ namespace Bexs.Rest
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -50,6 +51,13 @@ namespace Bexs.Rest
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseMvc();
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Default v1");
             });
         }
     }
