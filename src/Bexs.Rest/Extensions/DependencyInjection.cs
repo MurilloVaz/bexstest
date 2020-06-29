@@ -13,7 +13,7 @@ namespace Bexs.Rest.Extensions
     {
         public static void AddDependencies(this IServiceCollection services)
         {
-            services.AddSingleton<IAdministrationRepository, AdministrationRepository>();
+            services.AddScoped<IAdministrationRepository, AdministrationRepository>();
             services.AddScoped<IRouteRepository, RouteRepository>();
 
             services.AddScoped<IRouteService, RouteService>();
