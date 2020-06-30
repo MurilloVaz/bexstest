@@ -11,6 +11,7 @@ namespace Bexs.Test
 {
     public class RouteService
     {
+
         private readonly Mock<IRouteRepository> _mockRouteRepository;
 
         public RouteService()
@@ -32,9 +33,9 @@ namespace Bexs.Test
                 new Route(){ Id = 3, To = 4, From = 3,FromCode = "ORL",ToCode = "SCL",Price = 20},
                 new Route(){ Id = 4, To = 2, From = 4,FromCode = "SCL",ToCode = "GRU",Price = 20},
                 new Route(){ Id = 5, To = 6, From = 5,FromCode = "LIB",ToCode = "BIQ",Price = 12},
-                new Route() { Id = 6, To = 2, From = 7,FromCode = "BRC",ToCode = "GRU",Price = 10},
-                new Route() { Id = 7, To = 3, From = 1,FromCode = "CDG",ToCode = "ORL",Price = 5},
-                new Route() { Id = 8, To = 7, From = 4,FromCode = "SCL",ToCode = "BRC",Price = 5}
+                new Route(){ Id = 6, To = 2, From = 7,FromCode = "BRC",ToCode = "GRU",Price = 10},
+                new Route(){ Id = 7, To = 3, From = 1,FromCode = "CDG",ToCode = "ORL",Price = 5},
+                new Route(){ Id = 8, To = 7, From = 4,FromCode = "SCL",ToCode = "BRC",Price = 5}
             });
         }
 
@@ -45,7 +46,7 @@ namespace Bexs.Test
         public async Task InsertRoute_SuccessInsertion_ReturnsTrue()
         {
             var mockSource = new Mock<IRouteRepository>();
-            _mockRouteRepository.Setup(m => m.InsertRoute(It.IsAny<Rest.Entities.DTO.BaseRoute>()))
+            mockSource.Setup(m => m.InsertRoute(It.IsAny<Rest.Entities.DTO.BaseRoute>()))
                 .Returns(async () => true);
 
             IRouteService routeService = new Rest.Services.RouteService(mockSource.Object);
@@ -61,7 +62,7 @@ namespace Bexs.Test
         public async Task InsertRoute_FailInsertion_ReturnsFalse()
         {
             var mockSource = new Mock<IRouteRepository>();
-            _mockRouteRepository.Setup(m => m.InsertRoute(It.IsAny<Rest.Entities.DTO.BaseRoute>()))
+            mockSource.Setup(m => m.InsertRoute(It.IsAny<Rest.Entities.DTO.BaseRoute>()))
                 .Returns(async () => false);
 
             IRouteService routeService = new Rest.Services.RouteService(mockSource.Object);
@@ -73,6 +74,57 @@ namespace Bexs.Test
             Assert.False(result);
         }
 
+        [Fact]
+        public void CheapestRoute_StringString_NoRoute_ReturnsNull()
+        {
+            IRouteService routeService = new Rest.Services.RouteService(_mockRouteRepository.Object);
+
+            var fromCode = "BRC";
+            var toCode = "LIB";
+
+            var result = routeService.CheapestRoute(fromCode, toCode);
+
+            Assert.Null(result);
+        }
+
+        [Fact]
+        public void CheapestRoute_StringString_RouteMatched_ReturnsRoute()
+        {
+            IRouteService routeService = new Rest.Services.RouteService(_mockRouteRepository.Object);
+
+            var fromCode = "CDG";
+            var toCode = "GRU";
+
+            var result = routeService.CheapestRoute(fromCode, toCode);
+
+            Assert.NotNull(result);
+        }
+
+        [Fact]
+        public void CheapestRoute_IntInt_NoRoute_ReturnsNull()
+        {
+            IRouteService routeService = new Rest.Services.RouteService(_mockRouteRepository.Object);
+
+            var fromCode = 7;
+            var toCode = 5;
+
+            var result = routeService.CheapestRoute(fromCode, toCode);
+
+            Assert.Null(result);
+        }
+
+        [Fact]
+        public void CheapestRoute_IntInt_RouteMatched_ReturnsRoute()
+        {
+            IRouteService routeService = new Rest.Services.RouteService(_mockRouteRepository.Object);
+
+            var fromCode = 1;
+            var toCode = 2;
+
+            var result = routeService.CheapestRoute(fromCode, toCode);
+
+            Assert.NotNull(result);
+        }
 
     }
 }

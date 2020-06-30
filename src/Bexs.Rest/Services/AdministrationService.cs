@@ -17,7 +17,7 @@ namespace Bexs.Rest.Services
         public AdministrationService(IAdministrationRepository repo, IConfiguration config)
         {
             _repo = repo;
-            _directory = config.GetSection("AppSettings:FileDirectory")?.Value;
+            _directory = config["AppSettings:FileDirectory"];
         }
         public async Task<bool> UpdateDatabase(IFormFile fileInput)
         {

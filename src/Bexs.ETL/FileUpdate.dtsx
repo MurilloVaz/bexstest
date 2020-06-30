@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="18"
-  DTS:VersionGUID="{ABADD18C-D088-4E3B-8778-578549543692}">
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{29F4A0B4-B5E9-4392-BB17-A5E24A8CB506}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -74,7 +74,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAG4g7TsQS3UOBS18JRwu/aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAkkLfc+8TcHEx7HxccCL0GJqVshUWowLrabbmh5WcB6AAAAAAOgAAAAAIAACAAAABCHCUSc+u2Kv4NBjBpjctQXIBNWfs+I/uRJ6DjdDskyyAAAADibR561YYwWw6rZxZyls2z7WyrrTkhTgfKlD5jTnQs2kAAAABnL06apPARnlDuSoKk0JUF3HNgFur6/cyz321eRjCJpz6hKWBoEdOVMzIBMZ0EC3tUix86an92FGWhW3h2qeZl</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAG4g7TsQS3UOBS18JRwu/aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD4HPGNqt1TKhD1d7je1z67phKtbVZgBHGB/3Z8mK0+MQAAAAAOgAAAAAIAACAAAAC7Evzo5VYXuaBAq8Qbn42ts+p9Q3aSD8PRbv+HYYitqiAAAAA9Xl1QcT8OyHnnzIWcuHDsKUL2WPXr/UnhavkKIkjwEkAAAACPMOH+1kuoCPg8IVUWC3NSblSrgPq73q6d27OYXx9LTwScp+s6hYPQsWe9Qi4IWIPHLB64b6C1ZvL/XKtFB2yJ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -446,13 +446,13 @@ ORDER BY R.Price DESC</property>
                       refId="Package\File update\Route table origin.Outputs[Saída de Origem OLE DB].ExternalColumns[FromCode]"
                       codePage="1252"
                       dataType="str"
-                      length="6"
+                      length="10"
                       name="FromCode" />
                     <externalMetadataColumn
                       refId="Package\File update\Route table origin.Outputs[Saída de Origem OLE DB].ExternalColumns[ToCode]"
                       codePage="1252"
                       dataType="str"
-                      length="6"
+                      length="10"
                       name="ToCode" />
                     <externalMetadataColumn
                       refId="Package\File update\Route table origin.Outputs[Saída de Origem OLE DB].ExternalColumns[Price]"
@@ -471,14 +471,14 @@ ORDER BY R.Price DESC</property>
                       refId="Package\File update\Route table origin.Outputs[Saída de Erro de Origem OLE DB].Columns[FromCode]"
                       codePage="1252"
                       dataType="str"
-                      length="6"
+                      length="10"
                       lineageId="Package\File update\Route table origin.Outputs[Saída de Erro de Origem OLE DB].Columns[FromCode]"
                       name="FromCode" />
                     <outputColumn
                       refId="Package\File update\Route table origin.Outputs[Saída de Erro de Origem OLE DB].Columns[ToCode]"
                       codePage="1252"
                       dataType="str"
-                      length="6"
+                      length="10"
                       lineageId="Package\File update\Route table origin.Outputs[Saída de Erro de Origem OLE DB].Columns[ToCode]"
                       name="ToCode" />
                     <outputColumn
@@ -556,17 +556,17 @@ ORDER BY R.Price DESC</property>
           Id="Package\File update\Route table origin"
           TopLeft="398,134" />
         <NodeLayout
-          Size="161,42"
-          Id="Package\File update\Data Conversion"
-          TopLeft="396,205" />
+          Size="153,42"
+          Id="Package\File update\File destination"
+          TopLeft="394,355" />
         <NodeLayout
           Size="216,42"
           Id="Package\File update\Price column transformation"
           TopLeft="365,276" />
         <NodeLayout
-          Size="153,42"
-          Id="Package\File update\File destination"
-          TopLeft="394,355" />
+          Size="161,42"
+          Id="Package\File update\Data Conversion"
+          TopLeft="396,205" />
         <EdgeLayout
           Id="Package\File update.Paths[Saída de Origem OLE DB]"
           TopLeft="478.5,176">
