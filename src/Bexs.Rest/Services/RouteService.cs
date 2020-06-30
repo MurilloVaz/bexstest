@@ -3,6 +3,7 @@ using Bexs.Rest.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Bexs.Rest.Services
@@ -48,7 +49,7 @@ namespace Bexs.Rest.Services
             if (route != null)
                 return new List<Entities.Route> { route };
 
-            var routesToSearch = possibleRoutes.Select(x=> new RouteToSearch
+            var routesToSearch = possibleRoutes.Select(x => new RouteToSearch
             {
                 CurrentRoute = x,
                 PastRoutes = new List<Route>(),
@@ -91,21 +92,33 @@ namespace Bexs.Rest.Services
 
         private void SearchForRoute(int from, int to, out Route route, out List<Route> possibleRoutes)
         {
-             possibleRoutes = _routes.Where(x => x.To == to).ToList();
-             route = possibleRoutes.FirstOrDefault(x => x.From == from);
+            possibleRoutes = _routes.Where(x => x.To == to).ToList();
+            route = possibleRoutes.FirstOrDefault(x => x.From == from);
         }
 
         private Entities.DTO.RouteGroup MapToDto(List<Entities.Route> routes)
         {
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < routes.Count; i++)
+            {
+                if (i == 0)
+                    sb.Append($"{routes[i].FromCode} - {routes[i].ToCode}");
+                else
+                    sb.Append($" - {routes[i].ToCode}");
+            }
+
             return new Entities.DTO.RouteGroup()
             {
-                Routes = routes.Select((x, i) => new Entities.DTO.Route {
+                Routes = routes.Select((x, i) => new Entities.DTO.Route
+                {
                     From = x.FromCode,
                     Order = i,
                     Price = x.Price,
                     To = x.ToCode
                 }),
-                Price = routes.Sum(x => x.Price)
+                Route = sb.ToString(),
+                TotalPrice = routes.Sum(x => x.Price)
             };
         }
 

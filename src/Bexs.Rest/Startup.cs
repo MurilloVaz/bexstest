@@ -42,8 +42,6 @@ namespace Bexs.Rest
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseHttpsRedirection();
-
             app.UseRouting();
 
             app.UseAuthorization();

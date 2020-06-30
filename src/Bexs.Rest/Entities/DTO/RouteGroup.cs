@@ -8,6 +8,8 @@ namespace Bexs.Rest.Entities.DTO
     public class RouteGroup
     {
         public IEnumerable<Route> Routes { get; set; }
-        public decimal Price { get; set; }
+
+        public string Route { get; set; }
+        public decimal TotalPrice { get; set; }
     }
 }

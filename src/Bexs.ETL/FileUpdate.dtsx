@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="19"
-  DTS:VersionGUID="{29F4A0B4-B5E9-4392-BB17-A5E24A8CB506}">
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{4B65AAED-0513-4762-A572-574BC9DC415F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Murillo Vaz\Desktop\bexstest\input-file.txt">
+          DTS:ConnectionString="C:\Users\Public\bexstest\input-file.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -38,7 +38,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FromCode"
-              DTS:DTSID="{1624E8A5-6910-4E8E-A087-07DACFDDBC96}"
+              DTS:DTSID="{91F790D0-7AFB-4A1C-8799-980FA7008FFD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -47,17 +47,26 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ToCode"
-              DTS:DTSID="{4723A1B7-228A-4507-AFC1-57F40C086873}"
+              DTS:DTSID="{FB49B428-3D8B-4005-976A-724C53FBD84E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="131"
               DTS:DataPrecision="19"
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Price"
-              DTS:DTSID="{36A9C33A-E150-4C50-A262-42BF33848F2D}"
+              DTS:DTSID="{71E0E1C4-27DC-4AEC-997B-FF5C40619236}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PriceString"
+              DTS:DTSID="{A161BFF6-5B68-4166-AD43-992FE48B6053}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -74,7 +83,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAG4g7TsQS3UOBS18JRwu/aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD4HPGNqt1TKhD1d7je1z67phKtbVZgBHGB/3Z8mK0+MQAAAAAOgAAAAAIAACAAAAC7Evzo5VYXuaBAq8Qbn42ts+p9Q3aSD8PRbv+HYYitqiAAAAA9Xl1QcT8OyHnnzIWcuHDsKUL2WPXr/UnhavkKIkjwEkAAAACPMOH+1kuoCPg8IVUWC3NSblSrgPq73q6d27OYXx9LTwScp+s6hYPQsWe9Qi4IWIPHLB64b6C1ZvL/XKtFB2yJ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAG4g7TsQS3UOBS18JRwu/aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABJ60dwGC357qUljWEMnSoL1hf1xXIix5L/GAlBjWKTaQAAAAAOgAAAAAIAACAAAACCpL96dzwaUMmX8ZALwVB7wynYTl2ewsQsMMe0+c0bbyAAAABVcNV6vqb9M7fJ970W7wdP8jNKCaxrUydT37hUgxo690AAAADPHpsERVfVUYfK73oTfD3yZ0Pyx+7UeA5/ogV1bf0BOwDgdQW7Y/cIZUtjN3FX/fCvCP8dE9Kaw5BBAtmWkivD</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -255,6 +264,12 @@
                       name="Price"
                       precision="19"
                       scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\File update\File destination.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[PriceString]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="PriceString" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
