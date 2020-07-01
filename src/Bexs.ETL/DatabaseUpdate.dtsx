@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="31"
-  DTS:VersionGUID="{CADEF8DE-2C5F-45F4-A0D4-7DB679B58338}">
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{C6B1C895-FE04-44C6-AA56-A69D5BF0AA54}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -119,7 +119,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAG4g7TsQS3UOBS18JRwu/aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB85AjNGTHvQEll+mroEa5n1JC78bt/kGqtHF+Jeo2iAwAAAAAOgAAAAAIAACAAAADSmLpvZJXxfEKT+LzN5sTsjxKNF5OXpsuA2opwMABVpCAAAAD+hp29o5jc3VhNBwGj1jTcT7KP0L4+saWtf1jxhJapi0AAAACalyu2vc4P7bIL3bf7pJGgSyBPh8GTe6OSbyl+CPx4h6MHP5MXn8C5iGkLGLKchuXHImQ0SJCFbo0PfWjur3Ec</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAG4g7TsQS3UOBS18JRwu/aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADJ9BJ+1ofu/mLihcQ28U+jEO5oKbjUcPfXZCIQEu57uQAAAAAOgAAAAAIAACAAAABOb15M7dl4Zy1vAxhehPfp60d9j1Lw6MMaVQRRT/TqAyAAAAAJXBLbuIZ6zogPpfH0wG+CvowuHISLu1nbcd5/QJ/9+EAAAAAfO8HBosIP4uT16lPEJhkr4sTgBOOQaArFcyiJuvOkKngttmH7tiDZ9hph41c0usKPuFMmXc1eqfQlpE3lfpYf</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -4811,6 +4811,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Update Route table\RouteEntry table origin"
           TopLeft="172,78" />
         <NodeLayout
+          Size="174,42"
+          Id="Package\Update Route table\Update Route table"
+          TopLeft="295,801" />
+        <NodeLayout
           Size="172,42"
           Id="Package\Update Route table\Order by To (code)"
           TopLeft="434,445" />
@@ -4851,6 +4855,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Update Route table\Multicast"
           TopLeft="211,248" />
         <EdgeLayout
+          Id="Package\Update Route table.Paths[Saída de Origem OLE DB1]"
+          TopLeft="765.333333333333,638.111111111111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-46.333333333333,0"
+              Start="0,0"
+              End="-38.833333333333,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-38.833333333333,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Update Route table.Paths[Saída de Origem OLE DB]"
           TopLeft="270.5,120">
           <EdgeLayout.Curve>
@@ -4873,55 +4899,41 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Update Route table.Paths[RouteOutput]"
-          TopLeft="483,123.391341256367">
+          Id="Package\Update Route table.Paths[Saída da Junção de Mesclagem2]"
+          TopLeft="249.611111111111,661.888888888889">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="45.7777777777781,127.444444444444"
+              EndConnector="0,42.111111111111"
               Start="0,0"
-              End="45.7777777777781,119.944444444444">
+              End="0,34.611111111111">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,59.7222222222221" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,59.7222222222221"
-                    Point2="0,63.7222222222221"
-                    Point3="4,63.7222222222221" />
-                  <mssgle:LineSegment
-                    End="41.7777777777781,63.7222222222221" />
-                  <mssgle:CubicBezierSegment
-                    Point1="41.7777777777781,63.7222222222221"
-                    Point2="45.7777777777781,63.7222222222221"
-                    Point3="45.7777777777781,67.7222222222221" />
-                  <mssgle:LineSegment
-                    End="45.7777777777781,119.944444444444" />
+                    End="0,34.611111111111" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="14.888888888889,68.7222222222221,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Update Route table.Paths[Classificar Saída]"
-          TopLeft="273,225">
+          Id="Package\Update Route table.Paths[Saída da Junção de Mesclagem1]"
+          TopLeft="253.055555555555,487">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,23"
+              EndConnector="0,45"
               Start="0,0"
-              End="0,15.5">
+              End="0,37.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.5" />
+                    End="0,37.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4965,219 +4977,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Update Route table.Paths[Classificar Saída1]"
-          TopLeft="528.777777777778,292.835785700811">
+          Id="Package\Update Route table.Paths[RouteOutput]"
+          TopLeft="483,123.391341256367">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-122.444444444445,48.555555555556"
+              EndConnector="45.7777777777781,127.444444444444"
               Start="0,0"
-              End="-122.444444444445,41.055555555556">
+              End="45.7777777777781,119.944444444444">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.770865733541" />
+                    End="0,59.7222222222221" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,24.770865733541"
-                    Point2="0,28.770865733541"
-                    Point3="-4,28.770865733541" />
+                    Point1="0,59.7222222222221"
+                    Point2="0,63.7222222222221"
+                    Point3="4,63.7222222222221" />
                   <mssgle:LineSegment
-                    End="-118.444444444445,28.770865733541" />
+                    End="41.7777777777781,63.7222222222221" />
                   <mssgle:CubicBezierSegment
-                    Point1="-118.444444444445,28.770865733541"
-                    Point2="-122.444444444445,28.770865733541"
-                    Point3="-122.444444444445,32.770865733541" />
+                    Point1="41.7777777777781,63.7222222222221"
+                    Point2="45.7777777777781,63.7222222222221"
+                    Point3="45.7777777777781,67.7222222222221" />
                   <mssgle:LineSegment
-                    End="-122.444444444445,41.055555555556" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Update Route table.Paths[2 de Saída Multicast]"
-          TopLeft="291.666666666667,290">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="75.0000000000001,51.391341256367"
-              Start="0,0"
-              End="75.0000000000001,43.891341256367">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.7084220310137" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.7084220310137"
-                    Point2="0,25.7084220310137"
-                    Point3="4,25.7084220310137" />
-                  <mssgle:LineSegment
-                    End="71.0000000000001,25.7084220310137" />
-                  <mssgle:CubicBezierSegment
-                    Point1="71.0000000000001,25.7084220310137"
-                    Point2="75.0000000000001,25.7084220310137"
-                    Point3="75.0000000000001,29.7084220310137" />
-                  <mssgle:LineSegment
-                    End="75.0000000000001,43.891341256367" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Update Route table.Paths[Classificar Saída2]"
-          TopLeft="434,466">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-114,0"
-              Start="0,0"
-              End="-106.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-106.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Update Route table.Paths[3 de Saída Multicast]"
-          TopLeft="253.416666666667,290">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,155"
-              Start="0,0"
-              End="0,147.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,147.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Update Route table.Paths[Saída da Junção de Mesclagem1]"
-          TopLeft="253.055555555555,487">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45"
-              Start="0,0"
-              End="0,37.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Update Route table.Paths[Classificar Saída3]"
-          TopLeft="252.027777777777,574">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45.888888888889"
-              Start="0,0"
-              End="0,38.388888888889">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38.388888888889" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Update Route table.Paths[Classificar Saída4]"
-          TopLeft="403,639.388888888889">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-92.555555555556,0"
-              Start="0,0"
-              End="-85.055555555556,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-85.055555555556,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Update Route table.Paths[Saída de Origem OLE DB1]"
-          TopLeft="765.333333333333,638.111111111111">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-46.333333333333,0"
-              Start="0,0"
-              End="-38.833333333333,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-38.833333333333,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Update Route table.Paths[Saída da Junção de Mesclagem2]"
-          TopLeft="249.611111111111,661.888888888889">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42.111111111111"
-              Start="0,0"
-              End="0,34.611111111111">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.611111111111" />
+                    End="45.7777777777781,119.944444444444" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5222,10 +5046,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="174,42"
-          Id="Package\Update Route table\Update Route table"
-          TopLeft="295,801" />
         <EdgeLayout
           Id="Package\Update Route table.Paths[Route exist]"
           TopLeft="268.777777777778,746">
@@ -5260,6 +5080,184 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <mssgm:EdgeLabel
               BoundingBox="31.359724392361,27.3893805309734,50.5027734375,9.470703125"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Update Route table.Paths[Classificar Saída4]"
+          TopLeft="403,639.388888888889">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-92.555555555556,0"
+              Start="0,0"
+              End="-85.055555555556,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-85.055555555556,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Update Route table.Paths[Classificar Saída3]"
+          TopLeft="252.027777777777,574">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.888888888889"
+              Start="0,0"
+              End="0,38.388888888889">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.388888888889" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Update Route table.Paths[Classificar Saída2]"
+          TopLeft="434,466">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-114,0"
+              Start="0,0"
+              End="-106.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-106.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Update Route table.Paths[Classificar Saída1]"
+          TopLeft="528.777777777778,292.835785700811">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-122.444444444445,48.555555555556"
+              Start="0,0"
+              End="-122.444444444445,41.055555555556">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.770865733541" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.770865733541"
+                    Point2="0,28.770865733541"
+                    Point3="-4,28.770865733541" />
+                  <mssgle:LineSegment
+                    End="-118.444444444445,28.770865733541" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-118.444444444445,28.770865733541"
+                    Point2="-122.444444444445,28.770865733541"
+                    Point3="-122.444444444445,32.770865733541" />
+                  <mssgle:LineSegment
+                    End="-122.444444444445,41.055555555556" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Update Route table.Paths[Classificar Saída]"
+          TopLeft="273,225">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,23"
+              Start="0,0"
+              End="0,15.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Update Route table.Paths[3 de Saída Multicast]"
+          TopLeft="253.416666666667,290">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,155"
+              Start="0,0"
+              End="0,147.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,147.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Update Route table.Paths[2 de Saída Multicast]"
+          TopLeft="291.666666666667,290">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75.0000000000001,51.391341256367"
+              Start="0,0"
+              End="75.0000000000001,43.891341256367">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.7084220310137" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.7084220310137"
+                    Point2="0,25.7084220310137"
+                    Point3="4,25.7084220310137" />
+                  <mssgle:LineSegment
+                    End="71.0000000000001,25.7084220310137" />
+                  <mssgle:CubicBezierSegment
+                    Point1="71.0000000000001,25.7084220310137"
+                    Point2="75.0000000000001,25.7084220310137"
+                    Point3="75.0000000000001,29.7084220310137" />
+                  <mssgle:LineSegment
+                    End="75.0000000000001,43.891341256367" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5479,9 +5477,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-8,30.75,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
