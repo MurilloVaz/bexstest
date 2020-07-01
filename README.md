@@ -14,7 +14,7 @@ docker network create bexsnetwork
 
 docker run -p 44380:80 --net bexsnetwork --name bexsrest murillovaz/bexsrest 
 
-docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Mumu(#)12345" --name sqlserverbexs --net bexsnetwork -p 1433:1433 murillovaz/sqlserver-bexs
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Mumu(#)12345" --name sqlserverbexs --net bexsnetwork -p 1433:1433 murillovaz/sqlserverbexs
 ```
 É possível executar o projeto a partir de ferramentas de depuração, nesse caso, recomendo usar o VisualStudio com as extensões de dados instaladas.
 
