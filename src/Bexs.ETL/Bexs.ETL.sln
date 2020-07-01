@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Bexs.ETL", "Bexs.ETL.dtproj", "{E832A505-3149-455D-AFD8-DBF8B9D3258E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E832A505-3149-455D-AFD8-DBF8B9D3258E}.Development|Default.ActiveCfg = Development
+		{E832A505-3149-455D-AFD8-DBF8B9D3258E}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45175DBF-D001-4459-AFBC-16AC870DEFDC}
+	EndGlobalSection
+EndGlobal

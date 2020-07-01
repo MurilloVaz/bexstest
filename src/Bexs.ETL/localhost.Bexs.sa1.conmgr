@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.Bexs.sa1"
+  DTS:DTSID="{E7546E06-6823-479E-800B-18E68CA017AB}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=Bexs;Persist Security Info=True;Application Name=SSIS-Bexs.ETL-{E7546E06-6823-479E-800B-18E68CA017AB}localhost.Bexs.sa1;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAG4g7TsQS3UOBS18JRwu/aQAAAAACAAAAAAAQZgAAAAEAACAAAADAtRys5L3N4PO11zW1nQeEO1Q7lKUqbVJ6wGVIdkjDKwAAAAAOgAAAAAIAACAAAABvwsWAH5N5MWEJwX1Fkc3QDTwNgt9usE33OsAK1lZo34AAAACDa4Vr8GHi3AKR9fShN8wvllVKlXY6dkoFz5kN2ZjPw4WoYVsLiu5U55vi2e9Bt9MdYgfR9+QO/cPNdnI5JrIMAQYz3EiIwe+hozIKfAclndBQlZ76TN371SNsZ44+3jdcb14ilve1E3A+6UsboPdeu8eAipsQYxAksS9ZyYLWEEAAAAAqAlxxXG+ntsBRrH7ghdNvye5zKIUQA1gZ6ERIPLX3R28yL07E1f6kKgF1V2RF4nXfMgzBjokpwjYZq3YSPGCh</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
